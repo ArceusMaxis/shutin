@@ -1,3 +1,11 @@
 [gd_scene format=3 uid="uid://1d5awx3ahdd7"]
 
 [node name="Epilogue" type="Node2D"]
+
+[node name="Label" type="Label" parent="."]
+offset_left = 16.0
+offset_top = 152.0
+offset_right = 584.0
+offset_bottom = 227.0
+text = " he shares a meal with family after a longggg time and they all laugh and eat dinner as we zoom out the house, the road, the city, the planet and finally the solar system as the game cuts to black"
+autowrap_mode = 3

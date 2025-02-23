@@ -11,3 +11,11 @@ game_scn = ExtResource("2_3x1wi")
 wait_time = 2.0
 one_shot = true
 autostart = true
+
+[node name="Label" type="Label" parent="."]
+offset_left = 56.0
+offset_top = 128.0
+offset_right = 520.0
+offset_bottom = 232.0
+text = "emi falling sick at work and his covid test the next morning resulting as positive, as he stares in disbelief, betrayal and the BIG SAD :C"
+autowrap_mode = 3
