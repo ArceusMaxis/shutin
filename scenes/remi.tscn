@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://dcltvgc4w27jj"]
+
+[ext_resource type="Script" path="res://scripts/remi.gd" id="1_5bchc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2m1r8"]
+size = Vector2(48, 16)
+
+[node name="Remi" type="CharacterBody2D" groups=["player"]]
+script = ExtResource("1_5bchc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["player"]]
+position = Vector2(0, 48)
+shape = SubResource("RectangleShape2D_2m1r8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -24.0
+offset_top = -56.0
+offset_right = 24.0
+offset_bottom = 56.0
+color = Color(0.63075, 0.465922, 0.342143, 1)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+z_index = 5
+z_as_relative = false
+offset_left = -88.0
+offset_top = -16.0
+offset_right = 85.0
+offset_bottom = 7.0
+text = "PRESS 'E' TO INTERACT"

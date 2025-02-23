@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://djn8v0mi62lel"
+path="res://.godot/imported/bg funky.wav-81ba96722506f52da37c294626d980ab.sample"
+
+[deps]
+
+source_file="res://bg funky.wav"
+dest_files=["res://.godot/imported/bg funky.wav-81ba96722506f52da37c294626d980ab.sample"]
+
+[params]
+
+force/8_bit=true
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=true
+edit/loop_mode=2
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

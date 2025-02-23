@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7eq0cthhbnqy"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_fb2s4"]
+friction = 0.1
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_j4oho"]
+radius = 16.0
+
+[node name="Ball" type="RigidBody2D"]
+mass = 0.2
+physics_material_override = SubResource("PhysicsMaterial_fb2s4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_j4oho")
+debug_color = Color(0.835294, 0.388235, 0, 1)
