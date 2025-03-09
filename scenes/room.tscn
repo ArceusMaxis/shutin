@@ -27,10 +27,10 @@
 [ext_resource type="AudioStream" uid="uid://djn8v0mi62lel" path="res://bg funky.wav" id="24_56q4j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jo1wa"]
-size = Vector2(168, 248)
+size = Vector2(120, 200)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4nsq3"]
-size = Vector2(72, 240)
+size = Vector2(72, 184)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l616m"]
 size = Vector2(16, 400)
@@ -2473,21 +2473,22 @@ epilogue_scn = ExtResource("6_6h3yo")
 
 [node name="Temp" type="Sprite2D" parent="."]
 position = Vector2(300, 200)
+scale = Vector2(0.449775, 0.380499)
 texture = ExtResource("4_8klvk")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D4" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(420, 108)
-polygon = PackedVector2Array(-180, -68, -180, 148, 36, 148, 180, 196, 180, -68)
+polygon = PackedVector2Array(-228, -68, -228, 132, -12, 132, 180, 172, 180, -68)
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(84, 124)
+position = Vector2(60, 140)
 shape = SubResource("RectangleShape2D_jo1wa")
 debug_color = Color(0, 0.6, 0.701961, 1)
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(204, 120)
+position = Vector2(156, 132)
 shape = SubResource("RectangleShape2D_4nsq3")
 debug_color = Color(0, 0.6, 0.701961, 1)
 
@@ -2504,18 +2505,19 @@ position = Vector2(300, 372)
 shape = SubResource("RectangleShape2D_bqg1k")
 
 [node name="DrumC" type="CollisionPolygon2D" parent="StaticBody2D"]
-position = Vector2(488, 308)
-polygon = PackedVector2Array(112, 52, -16, 52, -16, 28, 16, -28, 112, -28)
+position = Vector2(498.575, 308)
+scale = Vector2(0.929687, 1)
+polygon = PackedVector2Array(-28.5849, 52, 109.096, 52, 109.096, -28, -28.5849, 36)
 
 [node name="BedC" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2(72, 304)
-polygon = PackedVector2Array(-72, -56, 96, -56, 96, -32, -16, 32, -72, 40)
+polygon = PackedVector2Array(-72, -72, 24, -72, 24, 0, -72, 56)
 
 [node name="Bed" type="Area2D" parent="."]
 
 [node name="BedC" type="CollisionPolygon2D" parent="Bed"]
 position = Vector2(72, 304)
-polygon = PackedVector2Array(-72, -56, 96, -56, 96, -16, 8, 40, -72, 40)
+polygon = PackedVector2Array(-56, 56, 40, -8, 40, -72, -72, -72, -72, 56)
 
 [node name="gooda" type="AudioStreamPlayer" parent="Bed"]
 stream = ExtResource("7_be0oe")
@@ -2526,13 +2528,13 @@ stream = ExtResource("7_be0oe")
 
 [node name="DrumC" type="CollisionPolygon2D" parent="Drums"]
 position = Vector2(488, 308)
-polygon = PackedVector2Array(64, 52, -16, 36, -16, 28, 8, -12, 0, -36, 8, -60, 8, -84, -16, -100, -16, -132, -8, -140, 16, -140, 24, -180, 32, -180, 40, -148, 72, -148, 96, -156, 112, -156, 112, 52)
+polygon = PackedVector2Array(112, -180, 0, -140, 0, -84, 16, -44, 16, 44, 8, 52, 112, 52)
 
 [node name="Balcony" type="Area2D" parent="."]
 
 [node name="BalconyC" type="CollisionPolygon2D" parent="Balcony"]
 position = Vector2(88, 140)
-polygon = PackedVector2Array(80, 108, 152, 108, 152, -4, 80, -4)
+polygon = PackedVector2Array(32, -4, 104, -4, 104, 100, 32, 100)
 
 [node name="bala" type="AudioStreamPlayer" parent="Balcony"]
 
@@ -2552,7 +2554,8 @@ position = Vector2(432, 280)
 collision_layer = 3
 
 [node name="TempOver" type="Sprite2D" parent="."]
-position = Vector2(521, 242)
+position = Vector2(548, 244)
+scale = Vector2(0.330159, 0.324476)
 texture = ExtResource("5_km6k2")
 
 [node name="Incrtimer" type="Timer" parent="."]
